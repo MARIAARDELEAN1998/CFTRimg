@@ -17,8 +17,8 @@ Install MATLAB R2017b (<https://uk.mathworks.com/products/matlab.html>).
 
 #### Download the scripts and data
 Go to <https://github.com/stellaprins/CFTRimg>, and download the ZIP
-folder called *CFTRimg*. Unpack the folder and place it on
-the Desktop.
+folder called *CFTRimg-master*. Unpack the folder, place it on
+the Desktop and rename it *CFTRimg*.
 
 The folder should contain three folders: *CFTRimg*, *Data* and *Input Files*
 -   The *CFTRimg* folder contains the scripts and functions that are used to
