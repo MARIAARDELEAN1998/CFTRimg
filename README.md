@@ -155,10 +155,10 @@ Per plate, per condition, this excel sheet lists the **experimentStr**,
 **meanRedEntire**
 
 - *LocalSummary_yyyy_mm_dd_HHMM.xlsx*
-The mean log<sub>10</sub>&rho;	 on each plate is determined per condition and forms the
-subsample mean. For every condition, this excel sheet lists the: **condition**,
-**N**, **mean meanLogMemDens**, **lower CI**, **upper CI**, **cellN**,
-**deleteNeg**, **redEntireNeg**, **yelEntireNeg** and **yelMembraneNeg**
+The mean log<sub>10</sub>&rho; on each plate is determined per condition and 
+forms the subsample mean. For every condition, this excel sheet lists the:
+**condition**, **N**, **mean meanLogMemDens**, **lower CI**, **upper CI**, 
+**cellN**, **deleteNeg**, **redEntireNeg**, **yelEntireNeg** and **yelMembraneNeg**
 
 #### Cell images 
 If you have chosen to save cropped images of segmented cells after the image
@@ -259,13 +259,13 @@ in *CFTRimg\>Results\>ResultsQuench*
 
 #### The workspace
 
-Both types of quenching analysis, the I<sup>-</sup> first image analysis as well 
-as the I<sup>-</sup> last image analysis, result in a workspace that contains 
-and the structure *plate*.
+Both types of quenching analysis, the I<sup>-</sup> first image analysis as 
+well as the I<sup>-</sup> last image analysis, result in a workspace that 
+contains and the structure *plate*.
 
-The structure called *plate* contains the analysis results per plate, per well.
-To access the fields with information about plate *n*, type **plate(n)** in the
-command window.
+The structure called *plate* contains the analysis results per plate, per 
+well. To access the fields with information about plate *n*, type **plate(n)** 
+in the command window.
 
 **>> plate(1)**
 
@@ -294,15 +294,15 @@ To access the fields with information about well *m* on plate *n*, type
 
 #### Generated excel files
 Running the quenching analysis generates and saves an excel files in
-*CFTRimg\>Results\>ResultsQuench\>Ifirst* for the I<sup>-</sup> first quenching analysis, and two
-excel files in *Results\>ResultsQuench\>Ilast* for the I<sup>-</sup> last quenching
-analysis.
+*CFTRimg\>Results\>ResultsQuench\>Ifirst* for the I<sup>-</sup> first 
+quenching analysis, and two excel files in *Results\>ResultsQuench\>Ilast* 
+for the I<sup>-</sup> last quenching analysis.
 
 - *fullQuenchTimeline_yyyy_mm_dd_HHMM.xlsx*
 This sheet contains the normalised fluorescence intensity over time
-(**TimePoint_1**, **TimePoint_2**, **TimePoint_3**, … **TimePoint_70**) for each
-well. For each well it also contains the **experimentStr**, **plateStr**,
-**condition**, **test_control**, **redInside**, **redInsideNorm**.
+(**TimePoint_1**, **TimePoint_2**, **TimePoint_3**, … **TimePoint_70**) 
+for each well. For each well it also contains the **experimentStr**, 
+**plateStr**, **condition**, **test_control**, **redInside**, **redInsideNorm**.
 
 - *fullQuenchFitting_yyyy_mm_dd_HHMM.xlsx*
 This file is only saved for the I<sup>-</sup> last quenching analysis. The sheet
