@@ -5,8 +5,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-saveWorkspaceHere				= fullfile(getDesktopDir(),'\Prins et al 2019 MATLAB code\Results\ResultsLocal\local_workspace_'); % filepath for saving the workspace
-saveLocalResultsFolder	= fullfile(getDesktopDir(),'Prins et al 2019 MATLAB code\Results\ResultsLocal'); %  filepath to location for saving excel files with the results
+saveWorkspaceHere				= fullfile(getDesktopDir(),'\CFTRimg\Results\ResultsLocal\local_workspace_'); % filepath for saving the workspace
+saveLocalResultsFolder	= fullfile(getDesktopDir(),'CFTRimg\Results\ResultsLocal'); %  filepath to location for saving excel files with the results
 inputFolderN						= 1;																													% number of 'input folders' 
 input										= createInputStruct_local(inputFolderN);											% create empty structs
 
@@ -19,7 +19,7 @@ input(1).objective				= 60;												% microscope objective (60x)
 input(1).experimentStr		= {'04-12-17 Plate_15771'};	% identifier experiment
 input(1).plateStr					= {'04-12-17 Plate_15771'};	% identifier plate 
 input(1).folderName				= 'local';									% name of folder in which Timepoint folders are located
-input(1).baseFolder				= strcat(getDesktopDir(),'\Prins et al 2019 MATLAB code\Data'); % filepath in which folders with Timepoint folders are located	
+input(1).baseFolder				= strcat(getDesktopDir(),'\CFTRimg\Data'); % filepath in which folders with Timepoint folders are located	
 input(1).filePrefix				= 'local_';									% prefix file name before C02_s1_w1, C02_s1_w2, C02_s2_w1 etc (C02_s2_w1 -> well C02, site 2, wavelength 1) 
 input(1).condition				= {'WT 28°C','F508del 28°C', 'F508del + 10 µM VX-809 28°C'}; % conditions
 input(1).normCondition		= {'WT 28°C'};							% WT on the plate (for calculating the normalised RedInside)
