@@ -1,0 +1,25 @@
+"HTSInfoFile", Version 1.0
+"Description", ""
+"PlateType", 2
+"TimePoints", 33
+"XWells", 12
+"YWells", 8
+"WellsSelection1", FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE
+"WellsSelection2", FALSE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE
+"WellsSelection3", FALSE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE
+"WellsSelection4", FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE
+"WellsSelection5", FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE
+"WellsSelection6", FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE
+"WellsSelection7", FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE
+"WellsSelection8", FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE
+"Sites", FALSE
+"XSites", 1
+"YSites", 1
+"Waves", TRUE
+"NWavelengths", 2
+"WaveName1", "ex472/30 em520/35"
+"WaveName2", "ex562/40 em624/40"
+"WaveCollect1", 1
+"WaveCollect2", 1
+"UniquePlateIdentifier", "6a8d3f40-1cef-4980-99fa-984f212ef871"
+"EndFile"
