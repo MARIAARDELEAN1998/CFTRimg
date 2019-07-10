@@ -2,8 +2,8 @@ tic
 clc
 clear
 close all 
-addpath(genpath(strcat(getDesktopDir(),'\Prins et al 2019 MATLAB code')));	% add folder with code to path
-example_input_local;																												% the name of your input file
+addpath(genpath(strcat(getDesktopDir(),'\CFTRimg')));	% add folder with code to path
+example_input_local;																	% the name of your input file
 
 % SET UP DATA STRUCTURES
 plate		= createPlateStruct_local(input);			% creates an empty struct for each plate,
