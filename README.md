@@ -5,7 +5,7 @@ images of live HEK293 cells, heterologously expressing soluble mCherry and
 YFP(H148Q/I152L) linked CFTR channels.
 
 Here we provide information on how to use the MATLAB code for the image analysis
-described in “*High-content assay for precision medicine discovery in cystic
+described in *“High-content assay for precision medicine discovery in cystic
 fibrosis”* (Prins et al., 2019). The instructions will allow you to download a
 set of images, get a copy of the script and run the analysis to obtain
 information on CFTR membrane density, and CFTR ion channel function.
@@ -356,7 +356,7 @@ contains the **experimentStr**, **plateStr**, **condition**,
 
 Prins, S., Langron, E., Hastings, C., Hill, E., Stefan, A.C., Griffin, L.D.,
 Vergani, P., (2019). High-content assay for precision medicine discovery in
-cystic fibrosis
+cystic fibrosis. bioRxiv 631614; doi: https://doi.org/10.1101/631614
 
 Langron, E, Simone, MI, Delalande, CMS, Reymond, JL, Selwood, DL, Vergani,
 P (2017). Improved fluorescence assays to measure the defects associated with
