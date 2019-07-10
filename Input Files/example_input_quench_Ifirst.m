@@ -31,19 +31,19 @@ input(1).condWellsControl(3,1:4)	=  {'E03','E05','E07','E09'};
 
 % input folder 2 
 
-% input(2).timeStep					= 2;															% time between image collection (seconds)
+% input(2).timeStep					= 2;																						% time between image collection (seconds)
 % input(2).timeline					= [first addition , second addition, end] (timepoints)
-% input(2).experimentStr		= {'exp'};				% identifier experiment
-% input(2).plateStr					= {'plate'};				% identifier plate 
-% input(2).folderName				= 'foldername';					% name of folder in which Timepoint folders are located
+% input(2).experimentStr		= {'exp'};																			% identifier experiment
+% input(2).plateStr					= {'plate'};																		% identifier plate 
+% input(2).folderName				= 'foldername';																	% name of folder in which Timepoint folders are located
 % input(2).baseFolder				= strcat(getDesktopDir(),'\Prins et al 2019 MATLAB code\example\data'); % filepath in which folders with Timepoint folders are located	
-% input(2).filePrefix				= 'prefix';											% prefix file name before C02_s1_w1, C02_s1_w2, C02_s2_w1 etc (C02_s2_w1 -> well C02, site 2, wavelength 1) 
-% input(2).condition				= {'WT', 'cond1', 'cond2'}; % conditions
-% input(2).normConditionStr	= {'WT'};										% WT on the plate (for calculating the normalised RedInside)
+% input(2).filePrefix				= 'prefix';																			% prefix file name before C02_s1_w1, C02_s1_w2, C02_s2_w1 etc (C02_s2_w1 -> well C02, site 2, wavelength 1) 
+% input(2).condition				= {'WT', 'cond1', 'cond2'};											% conditions
+% input(2).normConditionStr	= {'WT'};																				% WT on the plate (for calculating the normalised RedInside)
 
 %%% condWells are the wells in which CFTR is activated 
-% input(2).condWells(1,1:2)	= {'C02','C06'};						% corresponds to WT because WT is the first in the list of conditionStr
-% input(2).condWells(2,1:3)	= {'D04','D06','D08'};			% corresponds to cond1 because cond1 is the second in the list of conditionStr
+% input(2).condWells(1,1:2)	= {'C02','C06'};																% corresponds to WT because WT is the first in the list of conditionStr
+% input(2).condWells(2,1:3)	= {'D04','D06','D08'};													% corresponds to cond1 because cond1 is the second in the list of conditionStr
 % input(2).condWells(3,1)		= {'E02'};
 
 %%% condWellsControl are the wells in which CFTR is not activated (control condition)
