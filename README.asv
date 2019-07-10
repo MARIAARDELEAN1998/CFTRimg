@@ -33,8 +33,7 @@ The folder should contain three folders: *CFTRimg*, *Data* and *Input Files*
 -   Make sure *CFTRimg* is unpacked and located on the
     Desktop. The folder should contain three folders: *CFTRimg, Data, Input
     Files*.
--   Open MATLAB and add the *CFTRimg* folder and its subfolders to the 
-		MATLAB path.
+-   Open MATLAB and add the *CFTRimg* folder and its subfolders to the MATLAB path.
 
 ## CFTR membrane density
 You can find the example data in *CFTRimg\>Data\>example_data_local* The CFTRimg_Local.m
@@ -259,9 +258,9 @@ in *CFTRimg\>Results\>ResultsQuench*
 
 #### The workspace
 
-Both types of quenching analysis, the I<sup>-</sup> first image analysis as well 
-as the I<sup>-</sup> last image analysis, result in a workspace that contains 
-and the structure *plate*.
+Both types of quenching analysis, the I<sup>-</sup> first image analysis as well as the I<sup>-</sup>
+last image analysis, result in a workspace that contains and the structure
+*plate*.
 
 The structure called *plate* contains the analysis results per plate, per well.
 To access the fields with information about plate *n*, type **plate(n)** in the
@@ -294,7 +293,7 @@ To access the fields with information about well *m* on plate *n*, type
 
 #### Generated excel files
 Running the quenching analysis generates and saves an excel files in
-*CFTRimg\>Results\>ResultsQuench\>Ifirst* for the I<sup>-</sup> first quenching analysis, and two
+*Results\>ResultsQuench\>Ifirst* for the I<sup>-</sup> first quenching analysis, and two
 excel files in *Results\>ResultsQuench\>Ilast* for the I<sup>-</sup> last quenching
 analysis.
 
