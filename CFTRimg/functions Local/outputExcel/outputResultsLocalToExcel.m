@@ -8,10 +8,15 @@ function outputResultsLocalToExcel( resultsStructArray , saveLocationFolder, dat
 %		cell. The second csv file gives a summary of the most relevant
 %		statistics.
 
+
+% create the Results folder if it doesn't exist already.
+if ~exist(saveLocationFolder, 'dir')
+  mkdir(saveLocationFolder);
+end
+
 conditionN = length(resultsStructArray);
 
 % create table of full results
-
 totalCellN = 0;
 for i=1:conditionN
 	resultsStruct = resultsStructArray(i);
@@ -60,7 +65,7 @@ fullHeader = {'experimentStr', 'plateIdx', 'condition', 'normCondition'...
 	, 'yelEntireNorm', 'redEntireNorm', 'memDens', 'logMemDens'};
 
 fullCellArray = vertcat(fullHeader,fullResults);
-fullTable = cell2table(fullResults,'VariableNames',fullHeader);
+fullTable			= cell2table(fullResults,'VariableNames',fullHeader);
 
 if exist(saveLocationFolder,'dir') ~= 7
 	mkdir(saveLocationFolder)

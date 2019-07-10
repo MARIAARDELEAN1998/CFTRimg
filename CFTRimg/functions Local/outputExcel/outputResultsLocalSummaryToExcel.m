@@ -8,6 +8,12 @@ function outputResultsLocalSummaryToExcel( resultsLocal , saveLocationFolder, da
 %		cell. The second csv file gives a summary of the most relevant
 %		statistics.
 
+
+% create the Results folder if it doesn't exist already.
+if ~exist(saveLocationFolder, 'dir')
+  mkdir(saveLocationFolder);
+end
+
 % DESCRIPTIVES 
 totalCellN	= sum(vertcat(resultsLocal.cellN));
 data_expN		= cell(totalCellN,3);

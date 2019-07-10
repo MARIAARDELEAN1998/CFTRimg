@@ -1,16 +1,3 @@
-% High-content assay for precision medicine discovery in cystic fibrosis.
-% Stella Prins1, Emily Langron1, Cato Hastings2, Emily Hill1, Andra Stefan3, Lewis D. Griffin2 and Paola Vergani1*
-% 
-% 1 Department of Neuroscience, Physiology and Pharmacology
-% 2 CoMPLEX
-% 3 Natural Sciences
-% 
-% University College London
-% Gower Street
-% WC1E 6BT London UK
-% 
-% Correspondence to: p.vergani@ucl.ac.uk
-
 tic
 clc
 clear
@@ -57,6 +44,9 @@ switch SaveImages
 			if isToolboxAvailable('Computer Vision System Toolbox','error')	
 				fprintf('Saving cell images...\n');
 				saveLocation			= strcat(saveLocalResultsFolder,'\cellImages');
+					if ~exist(saveLocation, 'dir') 				% create the Results folder if it doesn't exist already.
+						mkdir(saveLocation);
+					end
 				labelAndSaveCells (resultsLocal,plate,saveLocation,prop);	
 				disp	 ('Cell images have been saved')
 			else end

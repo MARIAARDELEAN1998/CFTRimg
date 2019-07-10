@@ -2,7 +2,7 @@ tic
 clc
 clear
 close all 
-addpath(genpath(strcat(getDesktopDir(),'\Prins et al 2019 MATLAB code')))		% add folder with code to path
+addpath(genpath(strcat(getDesktopDir(),'\Prins et al 2019 MATLAB code')))						% add folder with code to path
 example_input_quench_Ifirst;																												% the name of your input file
 
 % STRUCTURING DATA
@@ -27,3 +27,4 @@ save																(strcat(saveWorkspaceHere,dateStr))
 outputQuenchTimelineToExcel         (plate,saveQuenchResultsHere,dateStr) 
 disp        ('Finished writing results to excel files')
 toc
+

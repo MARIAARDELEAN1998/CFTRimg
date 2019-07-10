@@ -8,6 +8,11 @@ function outputResultsLocalTableToExcel( resultsLocal , saveLocationFolder, date
 %		cell. The second csv file gives a summary of the most relevant
 %		statistics.
 
+% create the Results folder if it doesn't exist already.
+if ~exist(saveLocationFolder, 'dir')
+  mkdir(saveLocationFolder);
+end
+
 % TABLE RESULTS PER PLATE 
 data_expN		= cell(sum(vertcat(resultsLocal.cellN)),3);
 cellIdx			= 0;

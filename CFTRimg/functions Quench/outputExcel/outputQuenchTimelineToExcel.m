@@ -4,6 +4,11 @@ function outputQuenchTimelineToExcel( plateStructArray , saveLocationFolder, dat
 %   'writetable' function only works on Mac machine. This function splits
 %   so to work on both PC an unix machines.
 
+% create the Results folder if it doesn't exist already.
+if ~exist(saveLocationFolder, 'dir')
+  mkdir(saveLocationFolder);
+end
+
 plateN = length(plateStructArray);
 rowN = 0;
 

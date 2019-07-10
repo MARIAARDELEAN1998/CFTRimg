@@ -20,13 +20,14 @@ Go to <https://github.com/YOUR-USERNAME/YOUR-REPOSITORY>, and download the ZIP
 folder called *Prins et al 2019 MATLAB code*. Unpack the folder and place it on
 the Desktop.
 
-The folder should contain three folders: *CFTRimg*, *Input Files* and *Results*.
+The folder should contain three folders: *CFTRimg*, *Data* and *Input Files*
 -   The *CFTRimg* folder contains the scripts and functions that are used to
-    analyse the data.
+    analyse the data
+-   The *Data* folder contains sets of images for the localisation analysis 
+		(*local* folder), the I<sup>-</sup> first quenching analysis (*quench_Ifirst*
+		folder) and the I<sup>-</sup> last quenching analysis (*quench_Ilast* folder)
 -   The *Input Files* folder contains the scripts that provide information about
-    the data.
--   The *Results* folder contains several folders in which the working space,
-    excel files and images will be saved after running the analysis.
+    the data
 
 #### Download the data
 Go to [link], and download the ZIP folder called *Data*. Unpack the folder and
@@ -35,8 +36,8 @@ desktop.
 
 #### Before starting the image analysis
 -   Make sure *Prins et al 2019 MATLAB code* is unpacked and located on the
-    Desktop. The folder should contain four folders: *CFTRimg, Data, Input
-    Files* and *Results*.
+    Desktop. The folder should contain three folders: *CFTRimg, Data, Input
+    Files*.
 -   Open MATLAB and add the *Prins et al 2019 MATLAB code* folder and its
     subfolders to the MATLAB path.
 
@@ -65,12 +66,14 @@ experiment.
     (choose *Add to path* if you have not already added this folder to the path).
 -   A window will pop up asking you whether you want to save cropped images of
     segmented cells after the image analysis. Choose either Yes or No.
--   The resulting workspace and excel files with the results will be saved in
-    *Results\>ResultsLocal.* If you had chosen to save cropped images of the
-    segmented cells, the images will appear in
-    *Results\>ResultsLocal\>CellImages*.
+-   Folders to save the results in will be created in the main folder. The 
+		workspace and excel files with the results will be saved in 
+		*Results\>ResultsLocal.* If you had chosen to save cropped images of the 
+		segmented cells, the images	will appear in *Results\>ResultsLocal\>CellImages*.
 
 ### Results
+The analysis results can be found on the Desktop 
+in *Prins et al 2019 MATLAB code\>Results\>ResultsLocal*
 
 #### The workspace
 The workspace resulting from running *CFTRimg_Local.m* contains the structures
@@ -257,6 +260,8 @@ images to be matched to experimental conditions used in the experiment.
     *Results\>ResultsQuench\>Ilast.*
 
 ### Results
+The analysis results can be found on the Desktop 
+in *Prins et al 2019 MATLAB code\>Results\>ResultsQuench*
 
 #### The workspace
 
