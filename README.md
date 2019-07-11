@@ -356,7 +356,7 @@ contains the **experimentStr**, **plateStr**, **condition**,
 
 Prins, S., Langron, E., Hastings, C., Hill, E., Stefan, A.C., Griffin, L.D.,
 Vergani, P., (2019). High-content assay for precision medicine discovery in
-cystic fibrosis. bioRxiv 631614; doi: https://doi.org/10.1101/631614
+cystic fibrosis. bioRxiv 631614; doi: https://doi.org/10.1101/631614v5
 
 Langron, E, Simone, MI, Delalande, CMS, Reymond, JL, Selwood, DL, Vergani,
 P (2017). Improved fluorescence assays to measure the defects associated with
