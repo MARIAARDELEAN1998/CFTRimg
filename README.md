@@ -6,8 +6,8 @@ YFP(H148Q/I152L)-CFTR channels.
 
 
 Here we provide information on how to use the MATLAB code for the image analysis
-described in *“High-content assay for precision medicine discovery in cystic
-fibrosis”* (Prins et al., 2019). The instructions will allow you to download a
+described in *â€œHigh-content assay for precision medicine discovery in cystic
+fibrosisâ€* (Prins et al., 2019). The instructions will allow you to download a
 set of images, get a copy of the script and run the analysis to obtain
 information on CFTR membrane density, and CFTR ion channel function.
 
@@ -76,8 +76,8 @@ information about plate *n*, type **plate(n)** in the command window.
 
 	>   plateStr: 'Plate_15771'
 	>   experimentStr: 'Experiment 1'
-	>   normConditionStr: 'WT 28°C'
-	>   image: [48×1 struct]
+	>   normConditionStr: 'WT 28Â°C'
+	>   image: [48Ã—1 struct]
 
 **Plate(n)** contains a structure called *image* that can be accessed to view
 the fields with information about each image. To access the information
@@ -85,20 +85,20 @@ about image *m* on plate *n*, type **plate(n).image(m)** in the command window.
 
 **>> plate(1).image(1)**
 
-	>   conditionStr: 'WT 28°C'
+	>   conditionStr: 'WT 28Â°C'
 	>   redPath: 'C:\Users\USERNAME\Desktop\CFTRimg\Data\example_data_local\TimePoint_1\local_C02_s1_w2.TIF'
 	>   yelPath: 'C:\Users\ USERNAME \Desktop\CFTRimg\Data\example_data_local\TimePoint_1\local_C02_s1_w1.TIF'
 	>   binning: 0.5000
-	>   boundingBox: [36×4 double]
-	>   cellLocation: {36×4 cell}
-	>   redEntire: [36×1 double]
-	>   redOutside: [36×1 double]
-	>   yelEntire: [36×1 double]
-	>   yelOutside: [36×1 double]
-	>   yelMembrane: [36×1 double]
-	>   yelMembraneAbsolute: [36×1 double]
-	>   yelEntireAbsolute: [36×1 double]
-	>   redEntireAbsolute: [36×1 double]
+	>   boundingBox: [36Ã—4 double]
+	>   cellLocation: {36Ã—4 cell}
+	>   redEntire: [36Ã—1 double]
+	>   redOutside: [36Ã—1 double]
+	>   yelEntire: [36Ã—1 double]
+	>   yelOutside: [36Ã—1 double]
+	>   yelMembrane: [36Ã—1 double]
+	>   yelMembraneAbsolute: [36Ã—1 double]
+	>   yelEntireAbsolute: [36Ã—1 double]
+	>   redEntireAbsolute: [36Ã—1 double]
 	>   redBackground: 0.0147
 	>   yelBackground: 0.0187
 	>   cellN: [37 36]
@@ -113,20 +113,20 @@ To access the fields with information about condition number *n*, type
 
 **>> resultsLocal(1)**
 
-	>   condition: 'F508del + 10 µM VX-809 28°C'
-	>   normCondition: 'WT 28°C'
-	>   cellLocation: {528×4 cell}
-	>   yelMembrane: [528×1 double]
-	>   yelEntire: [528×1 double]
-	>   redEntire: [528×1 double]
-	>   yelMembraneNorm: [528×1 double]
-	>   yelEntireNorm: [528×1 double]
-	>   redEntireNorm: [528×1 double]
-	>   yelMembraneAbsolute: [528×1 double]
-	>   yelEntireAbsolute: [528×1 double]
-	>   redEntireAbsolute: [528×1 double]
-	>   memDens: [528×1 double]
-	>   logMemDens: [528×1 double]
+	>   condition: 'F508del + 10 ÂµM VX-809 28Â°C'
+	>   normCondition: 'WT 28Â°C'
+	>   cellLocation: {528Ã—4 cell}
+	>   yelMembrane: [528Ã—1 double]
+	>   yelEntire: [528Ã—1 double]
+	>   redEntire: [528Ã—1 double]
+	>   yelMembraneNorm: [528Ã—1 double]
+	>   yelEntireNorm: [528Ã—1 double]
+	>   redEntireNorm: [528Ã—1 double]
+	>   yelMembraneAbsolute: [528Ã—1 double]
+	>   yelEntireAbsolute: [528Ã—1 double]
+	>   redEntireAbsolute: [528Ã—1 double]
+	>   memDens: [528Ã—1 double]
+	>   logMemDens: [528Ã—1 double]
 	>   localCellN: 528
 	>   yelMembraneNeg: 8
 	>   yelEntireNeg: 8
@@ -172,11 +172,11 @@ table below.
 | **plateStr**            | Plate label as specified in the *example_input_local.m* file                                                                                                                                |
 | **experimentStr**       | Experiment label as specified in the *example_input_local.m* file                                                                                                                           |
 | **condition**           | Label of the experimental conditions as specified in the *example_input_local.m* file                                                                                                       |
-| **normCondition**       | Label of the condition used for normalisation (in this case “WT 28°C”), as specified in the *example_input_local.m* file                                                                    |
+| **normCondition**       | Label of the condition used for normalisation (in this case â€œWT 28Â°Câ€), as specified in the *example_input_local.m* file                                                                    |
 | **redPath**             | Filepaths for mCherry images                                                                                                                                                                     |
 | **yelPath**             | Filepaths for YFP images                                                                                                                                                                          |
-| **binning**             | With n×n pixel binning, this field is set to 1/n (in the *example_input_local.m* file 2×2 binning is used so this field is set to 1/2)                                                      |
-| **objective**           | *60* for 60× objective power                                                                                                                                                                      |
+| **binning**             | With nÃ—n pixel binning, this field is set to 1/n (in the *example_input_local.m* file 2Ã—2 binning is used so this field is set to 1/2)                                                      |
+| **objective**           | *60* for 60Ã— objective power                                                                                                                                                                      |
 | **redEntire**           | The average background corrected mCherry fluorescence intensity inside the cell selection                                                                                                   |
 | **redOutside**          | The average background corrected mCherry fluorescence intensity outside the cell selection and within the boundingBox                                                                               |
 | **yelEntire**           | The average background corrected YFP fluorescence intensity inside the cell selection                                                                                                       |
@@ -274,21 +274,21 @@ in the command window.
 
 	>   plateStr: '04-12-17 Plate_15771'
 	>   experimentStr: '04-12-17'
-	>   normCondition: 'WT + VX-770 28°C'
-	>   well: [23×1 struct]
+	>   normCondition: 'WT + VX-770 28Â°C'
+	>   well: [23Ã—1 struct]
 
 To access the fields with information about well *m* on plate *n*, type
 **plate(n).well(m)** in the command window.
 
 **>> plate(1).well(1)** 
 
-	>   condition: 'WT + VX-770 28°C'
+	>   condition: 'WT + VX-770 28Â°C'
 	>   test_control: 'test'
-	>   redPath: {1×2 cell}
-	>   yelPath: {1×70 cell}
+	>   redPath: {1Ã—2 cell}
+	>   yelPath: {1Ã—70 cell}
 	>   timeline: [5 26 70]
 	>   timeStep: 2
-	>   yelInsideOverT: [70×1 double]
+	>   yelInsideOverT: [70Ã—1 double]
 	>   redInsideNorm: 0.8079
 	>   redInside: 0.0381
 	>   redMaskChange: 0.2063
@@ -303,14 +303,14 @@ for the I<sup>-</sup> last quenching analysis.
 
 - *fullQuenchTimeline_yyyy_mm_dd_HHMM.xlsx*
 This sheet contains the normalised fluorescence intensity over time
-(**TimePoint_1**, **TimePoint_2**, **TimePoint_3**, … **TimePoint_70**) 
+(**TimePoint_1**, **TimePoint_2**, **TimePoint_3**, â€¦ **TimePoint_70**) 
 for each well. For each well it also contains the **experimentStr**, 
 **plateStr**, **condition**, **test_control**, **redInside**, **redInsideNorm**.
 
 - *fullQuenchFitting_yyyy_mm_dd_HHMM.xlsx*
 This file is only saved for the I<sup>-</sup> last quenching analysis. The
 file contains the fitting results (**TimePoint_1**, **TimePoint_2**,
-**TimePoint_3**, … **TimePoint_70**) for each well. For each well it also
+**TimePoint_3**, â€¦ **TimePoint_70**) for each well. For each well it also
 contains the **experimentStr**, **plateStr**, **condition**,
 **test_control**, **redInside**, **redInsideNorm**.
 
@@ -359,13 +359,13 @@ contains the **experimentStr**, **plateStr**, **condition**,
 
 Prins, S., Langron, E., Hastings, C., Hill, E., Stefan, A.C., Griffin, L.D.,
 Vergani, P., (2019). High-content assay for precision medicine discovery in
-cystic fibrosis. bioRxiv 631614; doi: https://doi.org/10.1101/631614v5
+cystic fibrosis. bioRxiv 631614; doi: https://doi.org/10.1101/631614
 
 Langron, E, Simone, MI, Delalande, CMS, Reymond, JL, Selwood, DL, Vergani,
 P (2017). Improved fluorescence assays to measure the defects associated with
 F508del-CFTR allow identification of new active compounds. *Br J
-Pharmacol* 174: 525– 539.
+Pharmacol* 174: 525â€“ 539.
 
 Langron E, Prins S, Vergani P (2018). Potentiation of the cystic fibrosis
 transmembrane conductance regulator by VX-770 involves stabilization of the
-pre-hydrolytic O1 state. *Br J Pharmacol* 175: 3990–4002
+pre-hydrolytic O1 state. *Br J Pharmacol* 175: 3990â€“4002
