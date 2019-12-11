@@ -14,8 +14,10 @@ information on CFTR membrane density, and CFTR ion channel function.
 ## Getting started
 
 #### Install MATLAB
-Install MATLAB R2017b (<https://uk.mathworks.com/products/matlab.html>).
+Install MATLAB R2017b (<https://uk.mathworks.com/products/matlab.html>)
+
 the Image Processing Toolbox https://www.mathworks.com/products/image.html
+
 the Optimization Toolbox https://uk.mathworks.com/products/optimization.html
 
 #### Download the scripts and data
